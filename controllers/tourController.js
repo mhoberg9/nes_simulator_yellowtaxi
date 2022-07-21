@@ -71,8 +71,31 @@ exports.stopSendingData = async (req, res) => {
 
 let repeats = false;
 sendingData = function (jsonData, repeatsNew) {
+
+  const mqtt = require("mqtt")
+
+
+const options = {
+    keepalive: 30,
+    clean: true,
+    reconnectPeriod: 1000,
+    connectTimeout: 30 * 1000,
+    will: {
+        topic: 'mqtt',
+        payload: 'Connection Closed abnormally..!',
+        qos: 2,
+        retain: true
+    },
+    rejectUnauthorized: false
+}
+
+  const connectUrl = 'ws://127.0.0.1:9001/mqtt'
+  const client = mqtt.connect(connectUrl, options)
+
   let rnd = Math.floor(Math.random() * jsonData.length);
-  console.log(jsonData[rnd]);
+  client.publish("demoTownSensorData", JSON.stringify(jsonData[rnd]));
+  console.log(`Sending ${JSON.stringify(jsonData[rnd])}`);
+
   repeats = repeatsNew;
   if (repeats === true) {
     setTimeout(() => {
