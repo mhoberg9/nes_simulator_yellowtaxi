@@ -38,15 +38,15 @@ exports.getAllOptions = async (req, res) => {
 };
 
 exports.getSpecificTour = async (req, res) => {
-  let district = req.params.district;
-  district = capitalizeFirstLetter(district);
-  district = capitalizeAfterUnderscore(district);
+  let subDistrict = req.params.subDistrict;
+  subDistrict = capitalizeFirstLetter(subDistrict);
+  subDistrict = capitalizeAfterUnderscore(subDistrict);
 
-  let filteredJson = yellowTaxiData.filter((t) => t.borough === district);
+  let filteredJson = yellowTaxiData.filter((t) => t.sub_borough === subDistrict);
   sendingData(filteredJson, true);
   try {
     return res.status(200).json({
-      message: `Sending data for ${district}. To stop this process send a PUT request to localhost:3000/api/v1/tours/`,
+      message: `Sending data for ${subDistrict}. To stop this process send a PUT request`,
     });
   } catch (e) {
     res.status(404).json({
@@ -72,6 +72,9 @@ exports.stopSendingData = async (req, res) => {
   }
 };
 
+/**
+ * MQTT connection and send to client
+ */
 let repeats = false;
 sendingData = function (jsonData, repeatsNew) {
   const mqtt = require("mqtt");
@@ -106,6 +109,12 @@ sendingData = function (jsonData, repeatsNew) {
     return false;
   }
 };
+
+/**
+ * String manipulation
+ * @param {Districts} string
+ * @returns
+ */
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);

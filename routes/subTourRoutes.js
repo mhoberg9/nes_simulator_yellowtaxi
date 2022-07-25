@@ -1,15 +1,15 @@
 const express = require("express");
 
 const router = express.Router();
-const tourController = require("../controllers/tourController");
+const subTourController = require("../controllers/subTourController");
 
 /**
  * Routing
  */
 
-router.route("/").get(tourController.getAllOptions).put(tourController.stopSendingData);
+router.route("/").get(subTourController.getAllOptions).put(subTourController.stopSendingData);
 
-router.route("/:district").get(tourController.getSpecificTour).put(tourController.stopSendingData)
+router.route("/:subDistrict").get(subTourController.getSpecificTour).put(subTourController.stopSendingData)
 //   .post(tourController.simulateRoute);
 
 // router
