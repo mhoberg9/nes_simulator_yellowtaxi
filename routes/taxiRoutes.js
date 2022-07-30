@@ -1,15 +1,14 @@
 const express = require("express");
 
 const router = express.Router();
-const tourController = require("../controllers/tourController");
+const taxiController = require("../controllers/taxiController");
 
 /**
  * Routing
  */
 
-router.route("/").get(tourController.getAllOptions).put(tourController.stopSendingData);
+router.route("/").get(taxiController.getTaxiRoutes)
 
-router.route("/:district").get(tourController.getSpecificTour).put(tourController.stopSendingData)
 //   .post(tourController.simulateRoute);
 
 // router

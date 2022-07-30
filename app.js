@@ -1,8 +1,9 @@
 const express = require('express');
         
-const tourRouter = require('./routes/tourRoutes')
-const subTourRouter = require('./routes/subTourRoutes')
+const taxiRouter = require('./routes/taxiRoutes')
 const app = express();
+var cors = require('cors')
+app.use(cors())
 app.use(express.json());
 
 // app.use((req, res, next) => {
@@ -11,6 +12,7 @@ app.use(express.json());
 // });
 
 app.use((req, res, next) => {
+    
     req.requestTime = new Date().toISOString();
     console.log(`
     Time: ${req.requestTime}
@@ -19,6 +21,5 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('/api/v1/tours',tourRouter)
-app.use('/api/v1/subTours', subTourRouter)
+app.use('/api/v1/taxi',taxiRouter)
 module.exports = app;

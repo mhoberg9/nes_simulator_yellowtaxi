@@ -1,20 +1,20 @@
-const express = require("express");
+// const express = require("express");
 
-const router = express.Router();
-const subTourController = require("../controllers/subTourController");
+// const router = express.Router();
+// const subTourController = require("../controllers/subTourController");
 
-/**
- * Routing
- */
+// /**
+//  * Routing
+//  */
 
-router.route("/").get(subTourController.getAllOptions).put(subTourController.stopSendingData);
+// router.route("/").get(subTourController.getAllOptions).put(subTourController.stopSendingData);
 
-router.route("/:subDistrict").get(subTourController.getSpecificTour).put(subTourController.stopSendingData)
-//   .post(tourController.simulateRoute);
+// router.route("/:subDistrict").get(subTourController.getSpecificTour).put(subTourController.stopSendingData)
+// //   .post(tourController.simulateRoute);
 
-// router
-//     .route('/:id')
-//     .get(stockController.getSpecificStock)
-//     .delete(stockController.deleteStock)
+// // router
+// //     .route('/:id')
+// //     .get(stockController.getSpecificStock)
+// //     .delete(stockController.deleteStock)
 
-module.exports = router;
+// module.exports = router;
