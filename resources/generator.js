@@ -24,13 +24,15 @@ for (let i = 0; i < 120; i++) {
     cpu: "getCpuInfo",
     memory: "getMemoryInfo",
     network: "getNetworkInfo",
-    taxi_data: "getTaxiData"
+    taxi_data: "getTaxiData",
+    timestamp: "getTimestamp",
+    running_query: "getRunningQueryInfo"
   });
 }
 console.log(objectJSON);
 
 try {
-  fs.writeFileSync("./resources/generated.json", JSON.stringify(objectJSON));
+  fs.writeFileSync("./generated.json", JSON.stringify(objectJSON));
   // file written successfully
 } catch (err) {
   console.error(err);
