@@ -1,14 +1,15 @@
 const yellowTaxiData = require("../resources/yellow_taxi.json");
 const sampleJson_1 = require("../resources/topologyBuilder_1");
+const sampleJson_2 = require("../resources/topologyBuilder_2");
+const sampleJson_3 = require("../resources/topologyBuilder_3");
 
-let counter = 0
+let counter = 1
 let cpuArray = []
 let memoryArray = []
 let networkArray = []
 
 exports.getTaxiRoutes = async (req, res) => {
     let data = jsonBuilder(counter);
-    //console.log(JSON.stringify(data));
     try {
         return res.status(200).json({
             data, jsonBuilder
@@ -19,7 +20,7 @@ exports.getTaxiRoutes = async (req, res) => {
         });
     } finally {
         if (counter === 3) {
-            counter = 0
+            counter = 1
         } else {
             counter++;
         }
@@ -27,7 +28,7 @@ exports.getTaxiRoutes = async (req, res) => {
 };
 
 /**
- * Accepts and array and a nodeId. If there a more than five elements per node it deletes the "oldest" entry
+ * Accepts and array and a nodeId. If there are more than five elements per node it deletes the "oldest" entry
  * @param nodeId
  * @param inputArray
  * @returns {*}
@@ -38,7 +39,6 @@ function cleanUpHistory(nodeId, inputArray) {
         let mappedArray = filteredArray.map((x => x.timestamp)).sort(function (x, y) {
             return x.timestamp - y.timestamp;
         });
-        console.log(mappedArray)
         if (mappedArray.length > 5) {
             inputArray.splice(inputArray.findIndex(e => e.id === nodeId && e.timestamp === mappedArray[0]), 1);
         }
@@ -106,6 +106,11 @@ exports.getRunningQueryInfo = (nodeId) => {
 }
 
 jsonBuilder = (counter) => {
-    console.log(counter)
-    return sampleJson_1.jsonBuilder();
+    if(counter === 1){
+        return sampleJson_1.jsonBuilder();
+    } else if (counter === 2){
+        return sampleJson_2.jsonBuilder();
+    } else if (counter === 3) {
+        return sampleJson_3.jsonBuilder();
+    }
 }
