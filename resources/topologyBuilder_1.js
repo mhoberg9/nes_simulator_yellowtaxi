@@ -547,7 +547,7 @@ exports.jsonBuilder =() =>{
     isMobile: false,
     location: null,
     query: builder.getQueryInfo(),
-    cpu: builder.getCpuInfo(),
+    cpu: builder.getCpuInfo(4),
     memory: builder.getMemoryInfo(),
     network: builder.getNetworkInfo(),
     taxi_data: builder.getTaxiData(),
