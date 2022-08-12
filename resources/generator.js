@@ -20,17 +20,19 @@ for (let i = 0; i < 120; i++) {
     ip_address: "127.0.0.1",
     isMobile: false,
     location: null,
-    query: "getQueryInfo",
-    cpu: "getCpuInfo",
-    memory: "getMemoryInfo",
-    network: "getNetworkInfo",
-    taxi_data: "getTaxiData"
+    query: "builder.getQueryInfo("+i+")",
+    cpu: "builder.getCpuInfo("+i+")",
+    memory: "builder.getMemoryInfo("+i+")",
+    network: "builder.getNetworkInfo(" + i+")",
+    taxi_data: "builder.getTaxiData(" + i+")",
+    timestamp: "builder.getTimestamp(" + i+")",
+    running_query: "builder.getRunningQueryInfo(" + i+")"
   });
 }
 console.log(objectJSON);
 
 try {
-  fs.writeFileSync("./resources/generated.json", JSON.stringify(objectJSON));
+  fs.writeFileSync("./generated.json", JSON.stringify(objectJSON));
   // file written successfully
 } catch (err) {
   console.error(err);
