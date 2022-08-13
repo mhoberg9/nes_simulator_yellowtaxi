@@ -2,7 +2,7 @@ const builder = require('../controllers/taxiController')
 exports.jsonBuilder =() =>{
   return {
     edges: [
-      {
+ /*     {
         source: 0,
         target: 1
       },
@@ -17,7 +17,7 @@ exports.jsonBuilder =() =>{
       {
         source: 3,
         target: 2
-      },
+      },*/
       {
         source: 4,
         target: 3
@@ -291,6 +291,10 @@ exports.jsonBuilder =() =>{
         target: 36
       },
       {
+        source: 71,
+        target: 37
+      },
+      {
         source: 72,
         target: 37
       },
@@ -332,7 +336,7 @@ exports.jsonBuilder =() =>{
       },
       {
         source: 82,
-        target: 42
+        target: 41
       },
       {
         source: 83,
@@ -355,6 +359,10 @@ exports.jsonBuilder =() =>{
         target: 44
       },
       {
+        source: 87,
+        target: 45
+      },
+      {
         source: 88,
         target: 45
       },
@@ -371,6 +379,10 @@ exports.jsonBuilder =() =>{
         target: 46
       },
       {
+        source: 91,
+        target: 47
+      },
+      {
         source: 92,
         target: 47
       },
@@ -385,6 +397,10 @@ exports.jsonBuilder =() =>{
       {
         source: 95,
         target: 48
+      },
+      {
+        source: 95,
+        target: 49
       },
       {
         source: 96,
@@ -484,7 +500,7 @@ exports.jsonBuilder =() =>{
       }
     ], 
         nodes: [
-    {
+ /*   {
       available_resources: 65535,
       id: 0,
       ip_address: "127.0.0.1",
@@ -525,7 +541,7 @@ exports.jsonBuilder =() =>{
       taxi_data: builder.getTaxiData(2),
       timestamp: builder.getTimestamp(2),
       running_query: builder.getRunningQueryInfo(2)
-    },
+    },*/
     {
       available_resources: 65535,
       id: 3,
