@@ -30,6 +30,7 @@ let networkArray = []
 
 exports.getTaxiRoutes = async (req, res) => {
     let data = jsonBuilder(counter);
+    console.log(JSON.stringify(data))
     try {
         return res.status(200).json({
             data, jsonBuilder
@@ -72,7 +73,7 @@ exports.getCpuInfo = (nodeId) => {
     if (nodeId !== undefined) {
         cleanUpHistory(nodeId, cpuArray)
         cpuArray.push({
-            id: nodeId, cpu: percentage[rnd], timestamp: Date.now()
+            id: nodeId, x: Date.now(),y: percentage[rnd]
         })
     } else {
         return 0
@@ -86,7 +87,7 @@ exports.getMemoryInfo = (nodeId) => {
     if (nodeId !== undefined) {
         cleanUpHistory(nodeId, memoryArray)
         memoryArray.push({
-            id: nodeId, memory: percentage[rnd], timestamp: Date.now()
+            id: nodeId, x: Date.now(),y: percentage[rnd]
         })
     } else {
         return 0
@@ -100,7 +101,7 @@ exports.getNetworkInfo = (nodeId) => {
     if (nodeId !== undefined) {
         cleanUpHistory(nodeId, networkArray)
         networkArray.push({
-            id: nodeId, network: percentage[rnd], timestamp: Date.now()
+            id: nodeId, x: Date.now(),y: percentage[rnd]
         })
     } else {
         return 0
