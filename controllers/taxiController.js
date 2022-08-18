@@ -30,7 +30,9 @@ let networkArray = []
 
 exports.getTaxiRoutes = async (req, res) => {
     let data = jsonBuilder(counter);
+/*
     console.log(JSON.stringify(data))
+*/
     try {
         return res.status(200).json({
             data, jsonBuilder
