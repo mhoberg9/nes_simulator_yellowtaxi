@@ -70,7 +70,7 @@ function cleanUpHistory(nodeId, inputArray) {
 }
 
 exports.getCpuInfo = (nodeId) => {
-    let percentage = [20, 24, 25, 20, 24, 25, 21, 26, 23, 24];
+    let percentage = [20, 24, 25, 20, 24, 25, 21, 26, 23, 24,20, 24, 25, 20, 24, 25, 21, 26, 23, 24,20, 24, 25, 20, 24, 25, 21, 26, 23, 24,92];
     let rnd = Math.floor(Math.random() * percentage.length);
     if (nodeId !== undefined) {
         cleanUpHistory(nodeId, cpuArray)
@@ -84,7 +84,7 @@ exports.getCpuInfo = (nodeId) => {
 };
 
 exports.getMemoryInfo = (nodeId) => {
-    let percentage = [80, 85, 80, 78, 50, 75, 70, 65, 70];
+    let percentage = [80, 85, 80, 78, 50, 75, 70, 65, 70,80, 85, 80, 78, 50, 75, 70, 65, 70,80, 85, 80, 78, 50, 75, 70, 65, 70,98];
     let rnd = Math.floor(Math.random() * percentage.length);
     if (nodeId !== undefined) {
         cleanUpHistory(nodeId, memoryArray)
@@ -98,7 +98,7 @@ exports.getMemoryInfo = (nodeId) => {
 };
 
 exports.getNetworkInfo = (nodeId) => {
-    let percentage = [2, 1, 2, 2, 1, 2, 1, 2, 1];
+    let percentage = [2, 1, 2, 2, 1, 2, 1, 2, 1,2, 1, 2, 2, 1, 2, 1, 2, 1,2, 1, 2, 2, 1, 2, 1, 2, 1,0];
     let rnd = Math.floor(Math.random() * percentage.length);
     if (nodeId !== undefined) {
         cleanUpHistory(nodeId, networkArray)
@@ -115,25 +115,35 @@ exports.getTaxiData = () => {
     let rnd = Math.floor(Math.random() * yellowTaxiData.length);
     return yellowTaxiData[rnd];
 };
-
+w
 exports.getQueryInfo = (nodeId) => {
     if (brooklyn_head.includes(nodeId)) {
         return "Brooklyn"
     }
     if (brooklyn_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * brooklynSub.length);
-        return brooklynSub[rnd]
+/*
+        return brooklynSub[rnd]<
+*/
+        return "Brooklyn_North"
     }
     if (bronx_head.includes(nodeId)) {
         return "Bronx"
     }
     if (bronx_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * bronxSub.length);
+/*
         return bronxSub[rnd]
+*/
+        return "Bronx_East"
+
     }
     if (manhattan_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * manhattanSub.length);
         return manhattanSub[rnd]
+/*
+        return "Manhattan_East"
+*/
     }
     if (manhattan_head.includes(nodeId)) {
         return "Manhattan"
@@ -143,14 +153,20 @@ exports.getQueryInfo = (nodeId) => {
     }
     if (queens_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * queensSub.length);
+/*
         return queensSub[rnd]
+*/
+        return "Queens_West"
     }
     if (staten_head.includes(nodeId)) {
         return "Staten_Island"
     }
     if (staten_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * statenSub.length);
+/*
         return statenSub[rnd]
+*/
+        return  "Staten_Island_North"
     }
     return "NYC"
 }
