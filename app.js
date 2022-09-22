@@ -1,6 +1,7 @@
 const express = require('express');
         
 const taxiRouter = require('./routes/taxiRoutes')
+const metricsRouter = require('./routes/metricsRoutes')
 const app = express();
 var cors = require('cors')
 app.use(cors())
@@ -22,4 +23,5 @@ app.use((req, res, next) => {
 });
 
 app.use('/api/v1/taxi',taxiRouter)
+app.use('/api/v1/metrics',metricsRouter)
 module.exports = app;
