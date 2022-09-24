@@ -6,14 +6,8 @@ const metricsController = require("../controllers/metricsController");
 /**
  * Routing
  */
+router.route("/").get(metricsController.getAllMetrics);
 
 router.route("/:nodeId").get(metricsController.getSpecificMetrics);
-
-//   .post(tourController.simulateRoute);
-
-// router
-//     .route('/:id')
-//     .get(stockController.getSpecificStock)
-//     .delete(stockController.deleteStock)
 
 module.exports = router;

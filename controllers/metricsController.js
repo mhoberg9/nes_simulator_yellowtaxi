@@ -1,9 +1,8 @@
-exports.getSpecificMetrics = async (req, res) => {
-    let nodeId = req.nodeId;
-    let data = produceData(nodeId);
-    try{
+exports.getAllMetrics = async (req, res) => {
+    let data = produceDataForAllNodes();
+    try {
         return res.status(200).json({
-           data:data
+            data: data
         });
     } catch (e) {
         res.status(404).json({
@@ -12,16 +11,30 @@ exports.getSpecificMetrics = async (req, res) => {
     }
 };
 
-const produceData = (nodeId) => {
+exports.getSpecificMetrics = async (req, res) => {
+    let nodeId = req.nodeId;
+    let data = produceDataForSingleNode(nodeId);
+    try {
+        return res.status(200).json({
+            data: data
+        });
+    } catch (e) {
+        res.status(404).json({
+            status: "fail", message: e,
+        });
+    }
+};
+
+const produceDataForSingleNode = (nodeId) => {
     let totalCpu = 1761933
-    let systemCpu= Math.floor(Math.random()* totalCpu)
+    let systemCpu = Math.floor(Math.random() * totalCpu)
     let idleCpu = totalCpu - systemCpu
 
     let totalRam = 41721716736;
-    let usedRam = Math.floor(Math.random()* totalRam)
+    let usedRam = Math.floor(Math.random() * totalRam)
     let freeRam = totalRam - usedRam
 
-    let bytesReceived = Math.floor(Math.random()* 1000000000)
+    let bytesReceived = Math.floor(Math.random() * 1000000000)
 
     let json = {
         "wrapped_cpu": {
@@ -37,8 +50,7 @@ const produceData = (nodeId) => {
                 "STEAL": 0,
                 "SYSTEM": 10830,
                 "USER": 43651
-            },
-            "CORE_2": {
+            }, "CORE_2": {
                 "CORE_NUM": 8,
                 "GUEST": 0,
                 "GUESTNICE": 0,
@@ -50,8 +62,7 @@ const produceData = (nodeId) => {
                 "STEAL": 0,
                 "SYSTEM": 10901,
                 "USER": 42541
-            },
-            "TOTAL": {
+            }, "TOTAL": {
                 "CORE_NUM": 0,
                 "GUEST": 0,
                 "GUESTNICE": 0,
@@ -64,8 +75,7 @@ const produceData = (nodeId) => {
                 "SYSTEM": systemCpu,
                 "USER": 346209
             }
-        },
-        "memory": {
+        }, "memory": {
             "BUFFER_RAM": usedRam,
             "FREE_HIGH": 0,
             "FREE_RAM": freeRam,
@@ -79,26 +89,34 @@ const produceData = (nodeId) => {
             "TOTAL_HIGH": 0,
             "TOTAL_RAM": 41721716736,
             "TOTAL_SWAP": 2147479552
-        },
-        "wrapped_network": [
-            {
-              "R_BYTES": bytesReceived,
-              "R_COMPRESSED": 0,
-              "R_DROP": 0,
-              "R_ERRS": 0,
-              "R_FIFO": 0,
-              "R_FRAME": 0,
-              "R_MULTICAST": 0,
-              "R_PACKETS": 10634,
-              "T_BYTES": 1083094,
-              "T_CARRIER": 0,
-              "T_COLLS": 0,
-              "T_COMPRESSED": 0,
-              "T_DROP": 0,
-              "T_ERRS": 0,
-              "T_FIFO": 0,
-              "T_PACKETS": 10634
-            }]
+        }, "wrapped_network": [{
+            "R_BYTES": bytesReceived,
+            "R_COMPRESSED": 0,
+            "R_DROP": 0,
+            "R_ERRS": 0,
+            "R_FIFO": 0,
+            "R_FRAME": 0,
+            "R_MULTICAST": 0,
+            "R_PACKETS": 10634,
+            "T_BYTES": 1083094,
+            "T_CARRIER": 0,
+            "T_COLLS": 0,
+            "T_COMPRESSED": 0,
+            "T_DROP": 0,
+            "T_ERRS": 0,
+            "T_FIFO": 0,
+            "T_PACKETS": 10634
+        }]
     }
     return json;
+}
+
+// produce metrics for all nodes
+const produceDataForAllNodes = () => {
+    let jsonAllNodes = {}
+    for (let i = 1; i <= 120; i++) {
+        console.log("nodeId: " + i)
+        Object.assign(jsonAllNodes, { [i]: produceDataForSingleNode(i) })
+    }
+    return jsonAllNodes
 }
