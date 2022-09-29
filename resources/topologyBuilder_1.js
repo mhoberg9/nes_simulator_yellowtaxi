@@ -507,9 +507,9 @@ exports.jsonBuilder = () => {
                  isMobile: false,
 
                  location: builder.getLocationInfo(0),
-                 cpu: builder.getCpuInfo(0),
-                 memory: builder.getMemoryInfo(0),
-                 network: builder.getNetworkInfo(0),
+                 
+                 
+                 type: builder.getNodeType(0),
 
 
                  running_query: builder.getRunningQueryInfo(0)
@@ -521,9 +521,9 @@ exports.jsonBuilder = () => {
                  isMobile: false,
 
                  location: builder.getLocationInfo(1),
-                 cpu: builder.getCpuInfo(1),
-                 memory: builder.getMemoryInfo(1),
-                 network: builder.getNetworkInfo(1),
+                 
+                 
+                 type: builder.getNodeType(1),
 
 
                  running_query: builder.getRunningQueryInfo(1)
@@ -535,9 +535,9 @@ exports.jsonBuilder = () => {
                  isMobile: false,
 
                  location: builder.getLocationInfo(2),
-                 cpu: builder.getCpuInfo(2),
-                 memory: builder.getMemoryInfo(2),
-                 network: builder.getNetworkInfo(2),
+                 
+                 
+                 type: builder.getNodeType(2),
 
 
                  running_query: builder.getRunningQueryInfo(2)
@@ -549,9 +549,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(3),
-                cpu: builder.getCpuInfo(3),
-                memory: builder.getMemoryInfo(3),
-                network: builder.getNetworkInfo(3),
+                
+                
+                type: builder.getNodeType(3),
 
 
                 running_query: builder.getRunningQueryInfo(3)
@@ -563,9 +563,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(4),
-                cpu: builder.getCpuInfo(4),
-                memory: builder.getMemoryInfo(4),
-                network: builder.getNetworkInfo(4),
+                
+                
+                type: builder.getNodeType(4),
 
 
                 running_query: builder.getRunningQueryInfo(4)
@@ -577,9 +577,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(5),
-                cpu: builder.getCpuInfo(5),
-                memory: builder.getMemoryInfo(5),
-                network: builder.getNetworkInfo(5),
+                
+                
+                type: builder.getNodeType(5),
 
 
                 running_query: builder.getRunningQueryInfo(5)
@@ -591,9 +591,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(6),
-                cpu: builder.getCpuInfo(6),
-                memory: builder.getMemoryInfo(6),
-                network: builder.getNetworkInfo(6),
+                
+                
+                type: builder.getNodeType(6),
 
 
                 running_query: builder.getRunningQueryInfo(6)
@@ -605,9 +605,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(7),
-                cpu: builder.getCpuInfo(7),
-                memory: builder.getMemoryInfo(7),
-                network: builder.getNetworkInfo(7),
+                
+                
+                type: builder.getNodeType(7),
 
 
                 running_query: builder.getRunningQueryInfo(7)
@@ -619,9 +619,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(8),
-                cpu: builder.getCpuInfo(8),
-                memory: builder.getMemoryInfo(8),
-                network: builder.getNetworkInfo(8),
+                
+                
+                type: builder.getNodeType(8),
 
 
                 running_query: builder.getRunningQueryInfo(8)
@@ -633,9 +633,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(9),
-                cpu: builder.getCpuInfo(9),
-                memory: builder.getMemoryInfo(9),
-                network: builder.getNetworkInfo(9),
+                
+                
+                type: builder.getNodeType(9),
 
 
                 running_query: builder.getRunningQueryInfo(9)
@@ -647,9 +647,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(10),
-                cpu: builder.getCpuInfo(10),
-                memory: builder.getMemoryInfo(10),
-                network: builder.getNetworkInfo(10),
+                
+                
+                type: builder.getNodeType(10),
 
 
                 running_query: builder.getRunningQueryInfo(10)
@@ -661,9 +661,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(11),
-                cpu: builder.getCpuInfo(11),
-                memory: builder.getMemoryInfo(11),
-                network: builder.getNetworkInfo(11),
+                
+                
+                type: builder.getNodeType(11),
 
 
                 running_query: builder.getRunningQueryInfo(11)
@@ -675,9 +675,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(12),
-                cpu: builder.getCpuInfo(12),
-                memory: builder.getMemoryInfo(12),
-                network: builder.getNetworkInfo(12),
+                
+                
+                type: builder.getNodeType(12),
 
 
                 running_query: builder.getRunningQueryInfo(12)
@@ -689,9 +689,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(13),
-                cpu: builder.getCpuInfo(13),
-                memory: builder.getMemoryInfo(13),
-                network: builder.getNetworkInfo(13),
+                
+                
+                type: builder.getNodeType(13),
 
 
                 running_query: builder.getRunningQueryInfo(13)
@@ -703,9 +703,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(14),
-                cpu: builder.getCpuInfo(14),
-                memory: builder.getMemoryInfo(14),
-                network: builder.getNetworkInfo(14),
+                
+                
+                type: builder.getNodeType(14),
 
 
                 running_query: builder.getRunningQueryInfo(14)
@@ -717,9 +717,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(15),
-                cpu: builder.getCpuInfo(15),
-                memory: builder.getMemoryInfo(15),
-                network: builder.getNetworkInfo(15),
+                
+                
+                type: builder.getNodeType(15),
 
 
                 running_query: builder.getRunningQueryInfo(15)
@@ -731,9 +731,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(16),
-                cpu: builder.getCpuInfo(16),
-                memory: builder.getMemoryInfo(16),
-                network: builder.getNetworkInfo(16),
+                
+                
+                type: builder.getNodeType(16),
 
 
                 running_query: builder.getRunningQueryInfo(16)
@@ -745,9 +745,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(17),
-                cpu: builder.getCpuInfo(17),
-                memory: builder.getMemoryInfo(17),
-                network: builder.getNetworkInfo(17),
+                
+                
+                type: builder.getNodeType(17),
 
 
                 running_query: builder.getRunningQueryInfo(17)
@@ -759,9 +759,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(18),
-                cpu: builder.getCpuInfo(18),
-                memory: builder.getMemoryInfo(18),
-                network: builder.getNetworkInfo(18),
+                
+                
+                type: builder.getNodeType(18),
 
 
                 running_query: builder.getRunningQueryInfo(18)
@@ -773,9 +773,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(19),
-                cpu: builder.getCpuInfo(19),
-                memory: builder.getMemoryInfo(19),
-                network: builder.getNetworkInfo(19),
+                
+                
+                type: builder.getNodeType(19),
 
 
                 running_query: builder.getRunningQueryInfo(19)
@@ -787,9 +787,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(20),
-                cpu: builder.getCpuInfo(20),
-                memory: builder.getMemoryInfo(20),
-                network: builder.getNetworkInfo(20),
+                
+                
+                type: builder.getNodeType(20),
 
 
                 running_query: builder.getRunningQueryInfo(20)
@@ -801,9 +801,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(21),
-                cpu: builder.getCpuInfo(21),
-                memory: builder.getMemoryInfo(21),
-                network: builder.getNetworkInfo(21),
+                
+                
+                type: builder.getNodeType(21),
 
 
                 running_query: builder.getRunningQueryInfo(21)
@@ -815,9 +815,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(22),
-                cpu: builder.getCpuInfo(22),
-                memory: builder.getMemoryInfo(22),
-                network: builder.getNetworkInfo(22),
+                
+                
+                type: builder.getNodeType(22),
 
 
                 running_query: builder.getRunningQueryInfo(22)
@@ -829,9 +829,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(23),
-                cpu: builder.getCpuInfo(23),
-                memory: builder.getMemoryInfo(23),
-                network: builder.getNetworkInfo(23),
+                
+                
+                type: builder.getNodeType(23),
 
 
                 running_query: builder.getRunningQueryInfo(23)
@@ -843,9 +843,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(24),
-                cpu: builder.getCpuInfo(24),
-                memory: builder.getMemoryInfo(24),
-                network: builder.getNetworkInfo(24),
+                
+                
+                type: builder.getNodeType(24),
 
 
                 running_query: builder.getRunningQueryInfo(24)
@@ -857,9 +857,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(25),
-                cpu: builder.getCpuInfo(25),
-                memory: builder.getMemoryInfo(25),
-                network: builder.getNetworkInfo(25),
+                
+                
+                type: builder.getNodeType(25),
 
 
                 running_query: builder.getRunningQueryInfo(25)
@@ -871,9 +871,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(26),
-                cpu: builder.getCpuInfo(26),
-                memory: builder.getMemoryInfo(26),
-                network: builder.getNetworkInfo(26),
+                
+                
+                type: builder.getNodeType(26),
 
 
                 running_query: builder.getRunningQueryInfo(26)
@@ -885,9 +885,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(27),
-                cpu: builder.getCpuInfo(27),
-                memory: builder.getMemoryInfo(27),
-                network: builder.getNetworkInfo(27),
+                
+                
+                type: builder.getNodeType(27),
 
 
                 running_query: builder.getRunningQueryInfo(27)
@@ -899,9 +899,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(28),
-                cpu: builder.getCpuInfo(28),
-                memory: builder.getMemoryInfo(28),
-                network: builder.getNetworkInfo(28),
+                
+                
+                type: builder.getNodeType(28),
 
 
                 running_query: builder.getRunningQueryInfo(28)
@@ -913,9 +913,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(29),
-                cpu: builder.getCpuInfo(29),
-                memory: builder.getMemoryInfo(29),
-                network: builder.getNetworkInfo(29),
+                
+                
+                type: builder.getNodeType(29),
 
 
                 running_query: builder.getRunningQueryInfo(29)
@@ -927,9 +927,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(30),
-                cpu: builder.getCpuInfo(30),
-                memory: builder.getMemoryInfo(30),
-                network: builder.getNetworkInfo(30),
+                
+                
+                type: builder.getNodeType(30),
 
 
                 running_query: builder.getRunningQueryInfo(30)
@@ -941,9 +941,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(31),
-                cpu: builder.getCpuInfo(31),
-                memory: builder.getMemoryInfo(31),
-                network: builder.getNetworkInfo(31),
+                
+                
+                type: builder.getNodeType(31),
 
 
                 running_query: builder.getRunningQueryInfo(31)
@@ -955,9 +955,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(32),
-                cpu: builder.getCpuInfo(32),
-                memory: builder.getMemoryInfo(32),
-                network: builder.getNetworkInfo(32),
+                
+                
+                type: builder.getNodeType(32),
 
 
                 running_query: builder.getRunningQueryInfo(32)
@@ -969,9 +969,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(33),
-                cpu: builder.getCpuInfo(33),
-                memory: builder.getMemoryInfo(33),
-                network: builder.getNetworkInfo(33),
+                
+                
+                type: builder.getNodeType(33),
 
 
                 running_query: builder.getRunningQueryInfo(33)
@@ -983,9 +983,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(34),
-                cpu: builder.getCpuInfo(34),
-                memory: builder.getMemoryInfo(34),
-                network: builder.getNetworkInfo(34),
+                
+                
+                type: builder.getNodeType(34),
 
 
                 running_query: builder.getRunningQueryInfo(34)
@@ -997,9 +997,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(35),
-                cpu: builder.getCpuInfo(35),
-                memory: builder.getMemoryInfo(35),
-                network: builder.getNetworkInfo(35),
+                
+                
+                type: builder.getNodeType(35),
 
 
                 running_query: builder.getRunningQueryInfo(35)
@@ -1011,9 +1011,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(36),
-                cpu: builder.getCpuInfo(36),
-                memory: builder.getMemoryInfo(36),
-                network: builder.getNetworkInfo(36),
+                
+                
+                type: builder.getNodeType(36),
 
 
                 running_query: builder.getRunningQueryInfo(36)
@@ -1025,9 +1025,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(37),
-                cpu: builder.getCpuInfo(37),
-                memory: builder.getMemoryInfo(37),
-                network: builder.getNetworkInfo(37),
+                
+                
+                type: builder.getNodeType(37),
 
 
                 running_query: builder.getRunningQueryInfo(37)
@@ -1039,9 +1039,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(38),
-                cpu: builder.getCpuInfo(38),
-                memory: builder.getMemoryInfo(38),
-                network: builder.getNetworkInfo(38),
+                
+                
+                type: builder.getNodeType(38),
 
 
                 running_query: builder.getRunningQueryInfo(38)
@@ -1053,9 +1053,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(39),
-                cpu: builder.getCpuInfo(39),
-                memory: builder.getMemoryInfo(39),
-                network: builder.getNetworkInfo(39),
+                
+                
+                type: builder.getNodeType(39),
 
 
                 running_query: builder.getRunningQueryInfo(39)
@@ -1067,9 +1067,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(40),
-                cpu: builder.getCpuInfo(40),
-                memory: builder.getMemoryInfo(40),
-                network: builder.getNetworkInfo(40),
+                
+                
+                type: builder.getNodeType(40),
 
 
                 running_query: builder.getRunningQueryInfo(40)
@@ -1081,9 +1081,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(41),
-                cpu: builder.getCpuInfo(41),
-                memory: builder.getMemoryInfo(41),
-                network: builder.getNetworkInfo(41),
+                
+                
+                type: builder.getNodeType(41),
 
 
                 running_query: builder.getRunningQueryInfo(41)
@@ -1095,9 +1095,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(42),
-                cpu: builder.getCpuInfo(42),
-                memory: builder.getMemoryInfo(42),
-                network: builder.getNetworkInfo(42),
+                
+                
+                type: builder.getNodeType(42),
 
 
                 running_query: builder.getRunningQueryInfo(42)
@@ -1109,9 +1109,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(43),
-                cpu: builder.getCpuInfo(43),
-                memory: builder.getMemoryInfo(43),
-                network: builder.getNetworkInfo(43),
+                
+                
+                type: builder.getNodeType(43),
 
 
                 running_query: builder.getRunningQueryInfo(43)
@@ -1123,9 +1123,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(44),
-                cpu: builder.getCpuInfo(44),
-                memory: builder.getMemoryInfo(44),
-                network: builder.getNetworkInfo(44),
+                
+                
+                type: builder.getNodeType(44),
 
 
                 running_query: builder.getRunningQueryInfo(44)
@@ -1137,9 +1137,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(45),
-                cpu: builder.getCpuInfo(45),
-                memory: builder.getMemoryInfo(45),
-                network: builder.getNetworkInfo(45),
+                
+                
+                type: builder.getNodeType(45),
 
 
                 running_query: builder.getRunningQueryInfo(45)
@@ -1151,9 +1151,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(46),
-                cpu: builder.getCpuInfo(46),
-                memory: builder.getMemoryInfo(46),
-                network: builder.getNetworkInfo(46),
+                
+                
+                type: builder.getNodeType(46),
 
 
                 running_query: builder.getRunningQueryInfo(46)
@@ -1165,9 +1165,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(47),
-                cpu: builder.getCpuInfo(47),
-                memory: builder.getMemoryInfo(47),
-                network: builder.getNetworkInfo(47),
+                
+                
+                type: builder.getNodeType(47),
 
 
                 running_query: builder.getRunningQueryInfo(47)
@@ -1179,9 +1179,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(48),
-                cpu: builder.getCpuInfo(48),
-                memory: builder.getMemoryInfo(48),
-                network: builder.getNetworkInfo(48),
+                
+                
+                type: builder.getNodeType(48),
 
 
                 running_query: builder.getRunningQueryInfo(48)
@@ -1193,9 +1193,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(49),
-                cpu: builder.getCpuInfo(49),
-                memory: builder.getMemoryInfo(49),
-                network: builder.getNetworkInfo(49),
+                
+                
+                type: builder.getNodeType(49),
 
 
                 running_query: builder.getRunningQueryInfo(49)
@@ -1207,9 +1207,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(50),
-                cpu: builder.getCpuInfo(50),
-                memory: builder.getMemoryInfo(50),
-                network: builder.getNetworkInfo(50),
+                
+                
+                type: builder.getNodeType(50),
 
 
                 running_query: builder.getRunningQueryInfo(50)
@@ -1221,9 +1221,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(51),
-                cpu: builder.getCpuInfo(51),
-                memory: builder.getMemoryInfo(51),
-                network: builder.getNetworkInfo(51),
+                
+                
+                type: builder.getNodeType(51),
 
 
                 running_query: builder.getRunningQueryInfo(51)
@@ -1235,9 +1235,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(52),
-                cpu: builder.getCpuInfo(52),
-                memory: builder.getMemoryInfo(52),
-                network: builder.getNetworkInfo(52),
+                
+                
+                type: builder.getNodeType(52),
 
 
                 running_query: builder.getRunningQueryInfo(52)
@@ -1249,9 +1249,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(53),
-                cpu: builder.getCpuInfo(53),
-                memory: builder.getMemoryInfo(53),
-                network: builder.getNetworkInfo(53),
+                
+                
+                type: builder.getNodeType(53),
 
 
                 running_query: builder.getRunningQueryInfo(53)
@@ -1263,9 +1263,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(54),
-                cpu: builder.getCpuInfo(54),
-                memory: builder.getMemoryInfo(54),
-                network: builder.getNetworkInfo(54),
+                
+                
+                type: builder.getNodeType(54),
 
 
                 running_query: builder.getRunningQueryInfo(54)
@@ -1277,9 +1277,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(55),
-                cpu: builder.getCpuInfo(55),
-                memory: builder.getMemoryInfo(55),
-                network: builder.getNetworkInfo(55),
+                
+                
+                type: builder.getNodeType(55),
 
 
                 running_query: builder.getRunningQueryInfo(55)
@@ -1291,9 +1291,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(56),
-                cpu: builder.getCpuInfo(56),
-                memory: builder.getMemoryInfo(56),
-                network: builder.getNetworkInfo(56),
+                
+                
+                type: builder.getNodeType(56),
 
 
                 running_query: builder.getRunningQueryInfo(56)
@@ -1305,9 +1305,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(57),
-                cpu: builder.getCpuInfo(57),
-                memory: builder.getMemoryInfo(57),
-                network: builder.getNetworkInfo(57),
+                
+                
+                type: builder.getNodeType(57),
 
 
                 running_query: builder.getRunningQueryInfo(57)
@@ -1319,9 +1319,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(58),
-                cpu: builder.getCpuInfo(58),
-                memory: builder.getMemoryInfo(58),
-                network: builder.getNetworkInfo(58),
+                
+                
+                type: builder.getNodeType(58),
 
 
                 running_query: builder.getRunningQueryInfo(58)
@@ -1333,9 +1333,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(59),
-                cpu: builder.getCpuInfo(59),
-                memory: builder.getMemoryInfo(59),
-                network: builder.getNetworkInfo(59),
+                
+                
+                type: builder.getNodeType(59),
 
 
                 running_query: builder.getRunningQueryInfo(59)
@@ -1347,9 +1347,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(60),
-                cpu: builder.getCpuInfo(60),
-                memory: builder.getMemoryInfo(60),
-                network: builder.getNetworkInfo(60),
+                
+                
+                type: builder.getNodeType(60),
 
 
                 running_query: builder.getRunningQueryInfo(60)
@@ -1361,9 +1361,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(61),
-                cpu: builder.getCpuInfo(61),
-                memory: builder.getMemoryInfo(61),
-                network: builder.getNetworkInfo(61),
+                
+                
+                type: builder.getNodeType(61),
 
 
                 running_query: builder.getRunningQueryInfo(61)
@@ -1375,9 +1375,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(62),
-                cpu: builder.getCpuInfo(62),
-                memory: builder.getMemoryInfo(62),
-                network: builder.getNetworkInfo(62),
+                
+                
+                type: builder.getNodeType(62),
 
 
                 running_query: builder.getRunningQueryInfo(62)
@@ -1389,9 +1389,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(63),
-                cpu: builder.getCpuInfo(63),
-                memory: builder.getMemoryInfo(63),
-                network: builder.getNetworkInfo(63),
+                
+                
+                type: builder.getNodeType(63),
 
 
                 running_query: builder.getRunningQueryInfo(63)
@@ -1403,9 +1403,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(64),
-                cpu: builder.getCpuInfo(64),
-                memory: builder.getMemoryInfo(64),
-                network: builder.getNetworkInfo(64),
+                
+                
+                type: builder.getNodeType(64),
 
 
                 running_query: builder.getRunningQueryInfo(64)
@@ -1417,9 +1417,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(65),
-                cpu: builder.getCpuInfo(65),
-                memory: builder.getMemoryInfo(65),
-                network: builder.getNetworkInfo(65),
+                
+                
+                type: builder.getNodeType(65),
 
 
                 running_query: builder.getRunningQueryInfo(65)
@@ -1431,9 +1431,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(66),
-                cpu: builder.getCpuInfo(66),
-                memory: builder.getMemoryInfo(66),
-                network: builder.getNetworkInfo(66),
+                
+                
+                type: builder.getNodeType(66),
 
 
                 running_query: builder.getRunningQueryInfo(66)
@@ -1445,9 +1445,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(67),
-                cpu: builder.getCpuInfo(67),
-                memory: builder.getMemoryInfo(67),
-                network: builder.getNetworkInfo(67),
+                
+                
+                type: builder.getNodeType(67),
 
 
                 running_query: builder.getRunningQueryInfo(67)
@@ -1459,9 +1459,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(68),
-                cpu: builder.getCpuInfo(68),
-                memory: builder.getMemoryInfo(68),
-                network: builder.getNetworkInfo(68),
+                
+                
+                type: builder.getNodeType(68),
 
 
                 running_query: builder.getRunningQueryInfo(68)
@@ -1473,9 +1473,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(69),
-                cpu: builder.getCpuInfo(69),
-                memory: builder.getMemoryInfo(69),
-                network: builder.getNetworkInfo(69),
+                
+                
+                type: builder.getNodeType(69),
 
 
                 running_query: builder.getRunningQueryInfo(69)
@@ -1487,9 +1487,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(70),
-                cpu: builder.getCpuInfo(70),
-                memory: builder.getMemoryInfo(70),
-                network: builder.getNetworkInfo(70),
+                
+                
+                type: builder.getNodeType(70),
 
 
                 running_query: builder.getRunningQueryInfo(70)
@@ -1501,9 +1501,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(71),
-                cpu: builder.getCpuInfo(71),
-                memory: builder.getMemoryInfo(71),
-                network: builder.getNetworkInfo(71),
+                
+                
+                type: builder.getNodeType(71),
 
 
                 running_query: builder.getRunningQueryInfo(71)
@@ -1515,9 +1515,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(72),
-                cpu: builder.getCpuInfo(72),
-                memory: builder.getMemoryInfo(72),
-                network: builder.getNetworkInfo(72),
+                
+                
+                type: builder.getNodeType(72),
 
 
                 running_query: builder.getRunningQueryInfo(72)
@@ -1529,9 +1529,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(73),
-                cpu: builder.getCpuInfo(73),
-                memory: builder.getMemoryInfo(73),
-                network: builder.getNetworkInfo(73),
+                
+                
+                type: builder.getNodeType(73),
 
 
                 running_query: builder.getRunningQueryInfo(73)
@@ -1543,9 +1543,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(74),
-                cpu: builder.getCpuInfo(74),
-                memory: builder.getMemoryInfo(74),
-                network: builder.getNetworkInfo(74),
+                
+                
+                type: builder.getNodeType(74),
 
 
                 running_query: builder.getRunningQueryInfo(74)
@@ -1557,9 +1557,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(75),
-                cpu: builder.getCpuInfo(75),
-                memory: builder.getMemoryInfo(75),
-                network: builder.getNetworkInfo(75),
+                
+                
+                type: builder.getNodeType(75),
 
 
                 running_query: builder.getRunningQueryInfo(75)
@@ -1571,9 +1571,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(76),
-                cpu: builder.getCpuInfo(76),
-                memory: builder.getMemoryInfo(76),
-                network: builder.getNetworkInfo(76),
+                
+                
+                type: builder.getNodeType(76),
 
 
                 running_query: builder.getRunningQueryInfo(76)
@@ -1585,9 +1585,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(77),
-                cpu: builder.getCpuInfo(77),
-                memory: builder.getMemoryInfo(77),
-                network: builder.getNetworkInfo(77),
+                
+                
+                type: builder.getNodeType(77),
 
 
                 running_query: builder.getRunningQueryInfo(77)
@@ -1599,9 +1599,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(78),
-                cpu: builder.getCpuInfo(78),
-                memory: builder.getMemoryInfo(78),
-                network: builder.getNetworkInfo(78),
+                
+                
+                type: builder.getNodeType(78),
 
 
                 running_query: builder.getRunningQueryInfo(78)
@@ -1613,9 +1613,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(79),
-                cpu: builder.getCpuInfo(79),
-                memory: builder.getMemoryInfo(79),
-                network: builder.getNetworkInfo(79),
+                
+                
+                type: builder.getNodeType(79),
 
 
                 running_query: builder.getRunningQueryInfo(79)
@@ -1627,9 +1627,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(80),
-                cpu: builder.getCpuInfo(80),
-                memory: builder.getMemoryInfo(80),
-                network: builder.getNetworkInfo(80),
+                
+                
+                type: builder.getNodeType(80),
 
 
                 running_query: builder.getRunningQueryInfo(80)
@@ -1641,9 +1641,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(81),
-                cpu: builder.getCpuInfo(81),
-                memory: builder.getMemoryInfo(81),
-                network: builder.getNetworkInfo(81),
+                
+                
+                type: builder.getNodeType(81),
 
 
                 running_query: builder.getRunningQueryInfo(81)
@@ -1655,9 +1655,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(82),
-                cpu: builder.getCpuInfo(82),
-                memory: builder.getMemoryInfo(82),
-                network: builder.getNetworkInfo(82),
+                
+                
+                type: builder.getNodeType(82),
 
 
                 running_query: builder.getRunningQueryInfo(82)
@@ -1669,9 +1669,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(83),
-                cpu: builder.getCpuInfo(83),
-                memory: builder.getMemoryInfo(83),
-                network: builder.getNetworkInfo(83),
+                
+                
+                type: builder.getNodeType(83),
 
 
                 running_query: builder.getRunningQueryInfo(83)
@@ -1683,9 +1683,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(84),
-                cpu: builder.getCpuInfo(84),
-                memory: builder.getMemoryInfo(84),
-                network: builder.getNetworkInfo(84),
+                
+                
+                type: builder.getNodeType(84),
 
 
                 running_query: builder.getRunningQueryInfo(84)
@@ -1697,9 +1697,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(85),
-                cpu: builder.getCpuInfo(85),
-                memory: builder.getMemoryInfo(85),
-                network: builder.getNetworkInfo(85),
+                
+                
+                type: builder.getNodeType(85),
 
 
                 running_query: builder.getRunningQueryInfo(85)
@@ -1711,9 +1711,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(86),
-                cpu: builder.getCpuInfo(86),
-                memory: builder.getMemoryInfo(86),
-                network: builder.getNetworkInfo(86),
+                
+                
+                type: builder.getNodeType(86),
 
 
                 running_query: builder.getRunningQueryInfo(86)
@@ -1725,9 +1725,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(87),
-                cpu: builder.getCpuInfo(87),
-                memory: builder.getMemoryInfo(87),
-                network: builder.getNetworkInfo(87),
+                
+                
+                type: builder.getNodeType(87),
 
 
                 running_query: builder.getRunningQueryInfo(87)
@@ -1739,9 +1739,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(88),
-                cpu: builder.getCpuInfo(88),
-                memory: builder.getMemoryInfo(88),
-                network: builder.getNetworkInfo(88),
+                
+                
+                type: builder.getNodeType(88),
 
 
                 running_query: builder.getRunningQueryInfo(88)
@@ -1753,9 +1753,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(89),
-                cpu: builder.getCpuInfo(89),
-                memory: builder.getMemoryInfo(89),
-                network: builder.getNetworkInfo(89),
+                
+                
+                type: builder.getNodeType(89),
 
 
                 running_query: builder.getRunningQueryInfo(89)
@@ -1767,9 +1767,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(90),
-                cpu: builder.getCpuInfo(90),
-                memory: builder.getMemoryInfo(90),
-                network: builder.getNetworkInfo(90),
+                
+                
+                type: builder.getNodeType(90),
 
 
                 running_query: builder.getRunningQueryInfo(90)
@@ -1781,9 +1781,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(91),
-                cpu: builder.getCpuInfo(91),
-                memory: builder.getMemoryInfo(91),
-                network: builder.getNetworkInfo(91),
+                
+                
+                type: builder.getNodeType(91),
 
 
                 running_query: builder.getRunningQueryInfo(91)
@@ -1795,9 +1795,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(92),
-                cpu: builder.getCpuInfo(92),
-                memory: builder.getMemoryInfo(92),
-                network: builder.getNetworkInfo(92),
+                
+                
+                type: builder.getNodeType(92),
 
 
                 running_query: builder.getRunningQueryInfo(92)
@@ -1809,9 +1809,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(93),
-                cpu: builder.getCpuInfo(93),
-                memory: builder.getMemoryInfo(93),
-                network: builder.getNetworkInfo(93),
+                
+                
+                type: builder.getNodeType(93),
 
 
                 running_query: builder.getRunningQueryInfo(93)
@@ -1823,9 +1823,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(94),
-                cpu: builder.getCpuInfo(94),
-                memory: builder.getMemoryInfo(94),
-                network: builder.getNetworkInfo(94),
+                
+                
+                type: builder.getNodeType(94),
 
 
                 running_query: builder.getRunningQueryInfo(94)
@@ -1837,9 +1837,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(95),
-                cpu: builder.getCpuInfo(95),
-                memory: builder.getMemoryInfo(95),
-                network: builder.getNetworkInfo(95),
+                
+                
+                type: builder.getNodeType(95),
 
 
                 running_query: builder.getRunningQueryInfo(95)
@@ -1851,9 +1851,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(96),
-                cpu: builder.getCpuInfo(96),
-                memory: builder.getMemoryInfo(96),
-                network: builder.getNetworkInfo(96),
+                
+                
+                type: builder.getNodeType(96),
 
 
                 running_query: builder.getRunningQueryInfo(96)
@@ -1865,9 +1865,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(97),
-                cpu: builder.getCpuInfo(97),
-                memory: builder.getMemoryInfo(97),
-                network: builder.getNetworkInfo(97),
+                
+                
+                type: builder.getNodeType(97),
 
 
                 running_query: builder.getRunningQueryInfo(97)
@@ -1879,9 +1879,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(98),
-                cpu: builder.getCpuInfo(98),
-                memory: builder.getMemoryInfo(98),
-                network: builder.getNetworkInfo(98),
+                
+                
+                type: builder.getNodeType(98),
 
 
                 running_query: builder.getRunningQueryInfo(98)
@@ -1893,9 +1893,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(99),
-                cpu: builder.getCpuInfo(99),
-                memory: builder.getMemoryInfo(99),
-                network: builder.getNetworkInfo(99),
+                
+                
+                type: builder.getNodeType(99),
 
 
                 running_query: builder.getRunningQueryInfo(99)
@@ -1907,9 +1907,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(100),
-                cpu: builder.getCpuInfo(100),
-                memory: builder.getMemoryInfo(100),
-                network: builder.getNetworkInfo(100),
+                
+                
+                type: builder.getNodeType(100),
 
 
                 running_query: builder.getRunningQueryInfo(100)
@@ -1921,9 +1921,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(101),
-                cpu: builder.getCpuInfo(101),
-                memory: builder.getMemoryInfo(101),
-                network: builder.getNetworkInfo(101),
+                
+                
+                type: builder.getNodeType(101),
 
 
                 running_query: builder.getRunningQueryInfo(101)
@@ -1935,9 +1935,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(102),
-                cpu: builder.getCpuInfo(102),
-                memory: builder.getMemoryInfo(102),
-                network: builder.getNetworkInfo(102),
+                
+                
+                type: builder.getNodeType(102),
 
 
                 running_query: builder.getRunningQueryInfo(102)
@@ -1949,9 +1949,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(103),
-                cpu: builder.getCpuInfo(103),
-                memory: builder.getMemoryInfo(103),
-                network: builder.getNetworkInfo(103),
+                
+                
+                type: builder.getNodeType(103),
 
 
                 running_query: builder.getRunningQueryInfo(103)
@@ -1963,9 +1963,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(104),
-                cpu: builder.getCpuInfo(104),
-                memory: builder.getMemoryInfo(104),
-                network: builder.getNetworkInfo(104),
+                
+                
+                type: builder.getNodeType(104),
 
 
                 running_query: builder.getRunningQueryInfo(104)
@@ -1977,9 +1977,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(105),
-                cpu: builder.getCpuInfo(105),
-                memory: builder.getMemoryInfo(105),
-                network: builder.getNetworkInfo(105),
+                
+                
+                type: builder.getNodeType(105),
 
 
                 running_query: builder.getRunningQueryInfo(105)
@@ -1991,9 +1991,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(106),
-                cpu: builder.getCpuInfo(106),
-                memory: builder.getMemoryInfo(106),
-                network: builder.getNetworkInfo(106),
+                
+                
+                type: builder.getNodeType(106),
 
 
                 running_query: builder.getRunningQueryInfo(106)
@@ -2005,9 +2005,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(107),
-                cpu: builder.getCpuInfo(107),
-                memory: builder.getMemoryInfo(107),
-                network: builder.getNetworkInfo(107),
+                
+                
+                type: builder.getNodeType(107),
 
 
                 running_query: builder.getRunningQueryInfo(107)
@@ -2019,9 +2019,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(108),
-                cpu: builder.getCpuInfo(108),
-                memory: builder.getMemoryInfo(108),
-                network: builder.getNetworkInfo(108),
+                
+                
+                type: builder.getNodeType(108),
 
 
                 running_query: builder.getRunningQueryInfo(108)
@@ -2033,9 +2033,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(109),
-                cpu: builder.getCpuInfo(109),
-                memory: builder.getMemoryInfo(109),
-                network: builder.getNetworkInfo(109),
+                
+                
+                type: builder.getNodeType(109),
 
 
                 running_query: builder.getRunningQueryInfo(109)
@@ -2047,9 +2047,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(110),
-                cpu: builder.getCpuInfo(110),
-                memory: builder.getMemoryInfo(110),
-                network: builder.getNetworkInfo(110),
+                
+                
+                type: builder.getNodeType(110),
 
 
                 running_query: builder.getRunningQueryInfo(110)
@@ -2061,9 +2061,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(111),
-                cpu: builder.getCpuInfo(111),
-                memory: builder.getMemoryInfo(111),
-                network: builder.getNetworkInfo(111),
+                
+                
+                type: builder.getNodeType(111),
 
 
                 running_query: builder.getRunningQueryInfo(111)
@@ -2075,9 +2075,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(112),
-                cpu: builder.getCpuInfo(112),
-                memory: builder.getMemoryInfo(112),
-                network: builder.getNetworkInfo(112),
+                
+                
+                type: builder.getNodeType(112),
 
 
                 running_query: builder.getRunningQueryInfo(112)
@@ -2089,9 +2089,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(113),
-                cpu: builder.getCpuInfo(113),
-                memory: builder.getMemoryInfo(113),
-                network: builder.getNetworkInfo(113),
+                
+                
+                type: builder.getNodeType(113),
 
 
                 running_query: builder.getRunningQueryInfo(113)
@@ -2103,9 +2103,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(114),
-                cpu: builder.getCpuInfo(114),
-                memory: builder.getMemoryInfo(114),
-                network: builder.getNetworkInfo(114),
+                
+                
+                type: builder.getNodeType(114),
 
 
                 running_query: builder.getRunningQueryInfo(114)
@@ -2117,9 +2117,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(115),
-                cpu: builder.getCpuInfo(115),
-                memory: builder.getMemoryInfo(115),
-                network: builder.getNetworkInfo(115),
+                
+                
+                type: builder.getNodeType(115),
 
 
                 running_query: builder.getRunningQueryInfo(115)
@@ -2131,9 +2131,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(116),
-                cpu: builder.getCpuInfo(116),
-                memory: builder.getMemoryInfo(116),
-                network: builder.getNetworkInfo(116),
+                
+                
+                type: builder.getNodeType(116),
 
 
                 running_query: builder.getRunningQueryInfo(116)
@@ -2145,9 +2145,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(117),
-                cpu: builder.getCpuInfo(117),
-                memory: builder.getMemoryInfo(117),
-                network: builder.getNetworkInfo(117),
+                
+                
+                type: builder.getNodeType(117),
 
 
                 running_query: builder.getRunningQueryInfo(117)
@@ -2159,9 +2159,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(118),
-                cpu: builder.getCpuInfo(118),
-                memory: builder.getMemoryInfo(118),
-                network: builder.getNetworkInfo(118),
+                
+                
+                type: builder.getNodeType(118),
 
 
                 running_query: builder.getRunningQueryInfo(118)
@@ -2173,9 +2173,9 @@ exports.jsonBuilder = () => {
                 isMobile: false,
 
                 location: builder.getLocationInfo(119),
-                cpu: builder.getCpuInfo(119),
-                memory: builder.getMemoryInfo(119),
-                network: builder.getNetworkInfo(119),
+                
+                
+                type: builder.getNodeType(119),
 
 
                 running_query: builder.getRunningQueryInfo(119)

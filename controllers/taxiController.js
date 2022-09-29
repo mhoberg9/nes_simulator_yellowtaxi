@@ -160,6 +160,15 @@ exports.getRunningQueryInfo = (nodeId) => {
     return [rnd1,rnd2,rnd3]
 }
 
+
+exports.getNodeType = (nodeId) => {
+    if(nodeId === 3){
+        return "Coordinator"
+    } else {
+        return "Worker"
+    }
+}
+
 jsonBuilder = (counter) => {
     return sampleJson_1.jsonBuilder();
 
