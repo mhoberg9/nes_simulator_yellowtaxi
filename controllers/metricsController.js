@@ -26,17 +26,20 @@ exports.getSpecificMetrics = async (req, res) => {
 };
 
 const produceDataForSingleNode = (nodeId) => {
+
     let totalCpu = 1761933
-    let systemCpu = Math.floor(Math.random() * totalCpu)
+    let systemCpu = Math.floor(Math.random() * totalCpu/6)
     let idleCpu = totalCpu - systemCpu
 
     let totalRam = 41721716736;
-    let usedRam = Math.floor(Math.random() * totalRam)
+    let usedRam = Math.floor(Math.random() * totalRam/6)
     let freeRam = totalRam - usedRam
 
-    let bytesReceived = Math.floor(Math.random() * 1000000000)
+    let bytesReceived = Math.floor(Math.random() * 10000000)
 
-    let json = {
+
+
+    return {
         "wrapped_cpu": {
             "CORE_1": {
                 "CORE_NUM": 1,
@@ -107,8 +110,7 @@ const produceDataForSingleNode = (nodeId) => {
             "T_FIFO": 0,
             "T_PACKETS": 10634
         }]
-    }
-    return json;
+    };
 }
 
 // produce metrics for all nodes

@@ -115,41 +115,56 @@ exports.getNetworkInfo = (nodeId) => {
 
 exports.getLocationInfo = (nodeId) => {
     if (brooklyn_head.includes(nodeId)) {
-        return "Brooklyn"
+        return "Brooklyn_Station"
     }
     if (brooklyn_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * brooklynSub.length);
+        return "Brooklyn"
+/*
         return brooklynSub[rnd]
+*/
     }
     if (bronx_head.includes(nodeId)) {
-        return "Bronx"
+        return "Bronx_Station"
     }
     if (bronx_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * bronxSub.length);
+        return "Bronx"
+/*
         return bronxSub[rnd]
+*/
     }
     if (manhattan_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * manhattanSub.length);
+        return "Manhattan"
+/*
         return manhattanSub[rnd]
+*/
     }
     if (manhattan_head.includes(nodeId)) {
-        return "Manhattan"
+        return "Manhattan_Station"
     }
     if (queens_head.includes(nodeId)) {
-        return "Queens"
+        return "Queens_Station"
     }
     if (queens_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * queensSub.length);
+        return "Queens"
+/*
         return queensSub[rnd]
+*/
     }
     if (staten_head.includes(nodeId)) {
-        return "Staten_Island"
+        return "Staten_Island_Station"
     }
     if (staten_sub.includes(nodeId)) {
         let rnd = Math.floor(Math.random() * statenSub.length);
+        return "Staten_Island"
+/*
         return statenSub[rnd]
+*/
     }
-    return "NYC"
+    return "NYC_Station"
 }
 
 
