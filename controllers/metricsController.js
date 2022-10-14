@@ -12,7 +12,7 @@ exports.getAllMetrics = async (req, res) => {
 };
 
 exports.getSpecificMetrics = async (req, res) => {
-    let nodeId = req.nodeId;
+    let nodeId = req.params.nodeId;
     let data = produceDataForSingleNode(nodeId);
     try {
         return res.status(200).json({
@@ -26,7 +26,6 @@ exports.getSpecificMetrics = async (req, res) => {
 };
 
 const produceDataForSingleNode = (nodeId) => {
-
     let totalCpu = 1761933
     let systemCpu = Math.floor(Math.random() * totalCpu/6)
     let idleCpu = totalCpu - systemCpu
@@ -35,6 +34,15 @@ const produceDataForSingleNode = (nodeId) => {
     let usedRam = Math.floor(Math.random() * totalRam/6)
     let freeRam = totalRam - usedRam
 
+    if(nodeId == "14"){
+        freeRam = 41721716736 * 0.05
+        usedRam = 41721716736 - freeRam
+    }
+
+    if(nodeId == "79"){
+        idleCpu = totalCpu * 0.05
+        systemCpu = totalCpu - idleCpu
+    }
     let bytesReceived = Math.floor(Math.random() * 10000000)
 
 
@@ -117,7 +125,6 @@ const produceDataForSingleNode = (nodeId) => {
 const produceDataForAllNodes = () => {
     let jsonAllNodes = {}
     for (let i = 1; i <= 120; i++) {
-        console.log("nodeId: " + i)
         Object.assign(jsonAllNodes, { [i]: produceDataForSingleNode(i) })
     }
     return jsonAllNodes
