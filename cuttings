@@ -1,0 +1,69 @@
+tr/* let cpuArray = []
+let memoryArray = []
+let networkArray = [] */
+
+/**
+ * Accepts and array and a nodeId. If there are more than five elements per node it deletes the "oldest" entry
+ * @param nodeId
+ * @param inputArray
+ * @returns {*}
+ */
+/* function cleanUpHistory(nodeId, inputArray) {
+    let filteredArray = inputArray.filter(x => x.id === nodeId);
+    if (filteredArray.length > 1) {
+        let mappedArray = filteredArray.map((x => x.timestamp)).sort(function (x, y) {
+            return x.timestamp - y.timestamp;
+        });
+        if (mappedArray.length > 5) {
+            inputArray.splice(inputArray.findIndex(e => e.id === nodeId && e.timestamp === mappedArray[0]), 1);
+        }
+    }
+    return inputArray
+} */
+
+/* exports.getCpuInfo = (nodeId) => {
+    let percentage = [20, 24, 25, 20, 24, 25, 21, 26, 23, 24, 20, 24, 25, 20, 24, 25, 21, 26, 23, 24, 20, 24, 25, 20, 24, 25, 21, 26, 23, 24, 92];
+    let rnd = Math.floor(Math.random() * percentage.length);
+    if (nodeId !== undefined) {
+        cleanUpHistory(nodeId, cpuArray)
+        cpuArray.push({
+            id: nodeId, x: Date.now(), y: percentage[rnd]
+        })
+    } else {
+        return 0
+    }
+    return cpuArray.filter(x => x.id === nodeId);
+}; */
+
+/* exports.getMemoryInfo = (nodeId) => {
+    let percentage = [80, 85, 80, 78, 50, 75, 70, 65, 70, 80, 85, 80, 78, 50, 75, 70, 65, 70, 80, 85, 80, 78, 50, 75, 70, 65, 70, 98];
+    let rnd = Math.floor(Math.random() * percentage.length);
+    if (nodeId !== undefined) {
+        cleanUpHistory(nodeId, memoryArray)
+        memoryArray.push({
+            id: nodeId, x: Date.now(), y: percentage[rnd]
+        })
+    } else {
+        return 0
+    }
+    return memoryArray.filter(x => x.id === nodeId);
+}; */
+
+/* exports.getNetworkInfo = (nodeId) => {
+    let percentage = [2, 1, 2, 2, 1, 2, 1, 2, 1, 2, 1, 2, 2, 1, 2, 1, 2, 1, 2, 1, 2, 2, 1, 2, 1, 2, 1, 0];
+    let rnd = Math.floor(Math.random() * percentage.length);
+    if (nodeId !== undefined) {
+        cleanUpHistory(nodeId, networkArray)
+        networkArray.push({
+            id: nodeId, x: Date.now(), y: percentage[rnd]
+        })
+    } else {
+        return 0
+    }
+    return networkArray.filter(x => x.id === nodeId);
+};
+ */
+/*exports.getTaxiData = () => {
+    let rnd = Math.floor(Math.random() * yellowTaxiData.length);
+    return yellowTaxiData[rnd];
+};*/

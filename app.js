@@ -7,7 +7,7 @@ var cors = require('cors')
 app.use(cors())
 app.use(express.json());
 
-// app.use((req, res, next) => {
+// app.use((req, res, next) => {    
 //     console.log('Hello from the middleware');
 //     next();
 // });

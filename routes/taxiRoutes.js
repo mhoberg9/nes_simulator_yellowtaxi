@@ -7,7 +7,7 @@ const taxiController = require("../controllers/taxiController");
  * Routing
  */
 
-router.route("/").get(taxiController.getTaxiRoutes)
+router.route("/:dataVersion").get(taxiController.getTaxiRoutes)
 
 //   .post(tourController.simulateRoute);
 

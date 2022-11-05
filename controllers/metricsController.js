@@ -34,6 +34,9 @@ const produceDataForSingleNode = (nodeId) => {
     let usedRam = Math.floor(Math.random() * totalRam/6)
     let freeRam = totalRam - usedRam
 
+    let bytesReceived = Math.floor(Math.random() * 10000000)
+
+    // task 2
     if(nodeId == "14"){
         freeRam = 41721716736 * 0.05
         usedRam = 41721716736 - freeRam
@@ -43,9 +46,21 @@ const produceDataForSingleNode = (nodeId) => {
         idleCpu = totalCpu * 0.05
         systemCpu = totalCpu - idleCpu
     }
-    let bytesReceived = Math.floor(Math.random() * 10000000)
 
+    if(nodeId == "24"){
+        idleCpu = totalCpu * 0.05
+        systemCpu = totalCpu - idleCpu
+    }
 
+    // task 3
+    if(nodeId == "12" || nodeId == "78"){
+        bytesReceived = 25000000
+    }
+
+    //task 5
+    if(nodeId == "9" || nodeId == "71" || nodeId=="59"){
+        bytesReceived = 22000000
+    }
 
     return {
         "wrapped_cpu": {
