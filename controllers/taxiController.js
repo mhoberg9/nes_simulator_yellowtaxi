@@ -23,6 +23,10 @@ const queens_sub = [30, 31, 58, 59, 60, 61, 114, 115, 116, 117, 118, 119]
 const staten_head = [17]
 const staten_sub = [32, 33, 62, 63, 64, 65]
 
+exports.helloWorld = (req, res) => {
+    res.send("Hello World!");
+}
+
 exports.getTaxiRoutes = async (req, res) => {
     let dataVersion = req.params.dataVersion;
     let data = jsonBuilder(dataVersion);
