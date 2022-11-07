@@ -25,11 +25,11 @@ exports.jsonBuilder = () => {
       {
         source: 5,
         target: 3,
-      },/* 
+      } /* 
       {
         source: 6,
         target: 4,
-      }, */
+      }, */,
       /* {
         source: 7,
         target: 4,
