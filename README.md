@@ -4,11 +4,8 @@ Simple express server, that returns topology data for NES on a GET request
 
 #How to
 
-1. Make sure to install https://git-lfs.github.com/
-2. Navigate into project
-3. Run npm install
-4. Run npm start
+1. Navigate to project folder
+2. Run npm install
+3. Run npm start
 
-Example JSON:
-OUTDATED ! 
 
