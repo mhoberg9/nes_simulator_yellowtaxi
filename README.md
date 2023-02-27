@@ -17,7 +17,7 @@ Simply run 'npm install' in the root directory of the project.
 ## Usage
 * Run 'npm start' in the root directory of the project.
 * Metrics endpoint available at "localhost:4000/api/v1/metrics/:nodeId"
-* Topology endpoint available at "localhost:4000//api/v1/taxi/:dataVersion"
+* Topology endpoint available at "localhost:4000/api/v1/taxi/:dataVersion"
 
 
 ## Functionality
